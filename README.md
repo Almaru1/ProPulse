@@ -1,7 +1,5 @@
 # ProPulse
 
-## El projecte ProPulse  
-
 Actualment, només els clubs professionals disposen de tecnologia avançada per analitzar dades físiques i tàctiques. 
 
 El nostre projecte proposa un sistema intel·ligent format per unes bambes i un arnès amb sensors que registren velocitat, potència, torsió corporal i freqüència cardíaca.
