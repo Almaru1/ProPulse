@@ -1,6 +1,6 @@
 # ProPulse
 
-El projecte ProPulse  
+## El projecte ProPulse  
 
 Actualment, només els clubs professionals disposen de tecnologia avançada per analitzar dades físiques i tàctiques. 
 
@@ -13,29 +13,29 @@ A més, s’inclou un espai per a ojeadors, que poden consultar estadístiques r
 El projecte combina hardware, xarxes, seguretat, servidors i aplicacions web, integrant tots els mòduls de SMX en una solució tecnològica moderna i escalable.
 
 
-Dispositius físics: unes bambes i un arnès amb sensors integrats (acceleròmetre, giroscopi i GPS) capaços de recollir dades de moviment, velocitat i distància.
+1. Dispositius físics: unes bambes i un arnès amb sensors integrats (acceleròmetre, giroscopi i GPS) capaços de recollir dades de moviment, velocitat i distància.
 
 
-Connexió sense fils: els dispositius s’enllacen via Bluetooth o WiFi amb el mòbil de l’entrenador.
+2. Connexió sense fils: els dispositius s’enllacen via Bluetooth o WiFi amb el mòbil de l’entrenador.
 
 
-Aplicació mòbil per a l’entrenador: permet:
+3. Aplicació mòbil per a l’entrenador: permet:
 
 
-Connectar i reconèixer cada dispositiu (bambes/arnès).
+	*Connectar i reconèixer cada dispositiu (bambes/arnès).
 
 
-Assignar-los a un jugador abans de començar l’entrenament.
+	*Assignar-los a un jugador abans de començar l’entrenament.
 
 
-Rebre i visualitzar dades en temps real (velocitat, distància, intensitat).
+	*Rebre i visualitzar dades en temps real (velocitat, distància, intensitat).
 
 
-Guardar els resultats de cada sessió al servidor.
+	*Guardar els resultats de cada sessió al servidor.
 
 
-Servidor i base de dades: emmagatzema tota la informació d’entrenaments, jugadors i rendiment per poder fer comparatives al llarg del temps.
+4. Servidor i base de dades: emmagatzema tota la informació d’entrenaments, jugadors i rendiment per poder fer comparatives al llarg del temps.
 
 
-Panell estadístic: genera gràfics com l’evolució de la velocitat mitjana o la millora del rendiment per jugador i per temporada.
+5. Panell estadístic: genera gràfics com l’evolució de la velocitat mitjana o la millora del rendiment per jugador i per temporada.
 
