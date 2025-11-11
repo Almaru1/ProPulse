@@ -22,16 +22,16 @@ El projecte combina hardware, xarxes, seguretat, servidors i aplicacions web, in
 3. Aplicació mòbil per a l’entrenador: permet:
 
 
-	*Connectar i reconèixer cada dispositiu (bambes/arnès).
+	Connectar i reconèixer cada dispositiu (bambes/arnès).
 
 
-	*Assignar-los a un jugador abans de començar l’entrenament.
+	Assignar-los a un jugador abans de començar l’entrenament.
 
 
-	*Rebre i visualitzar dades en temps real (velocitat, distància, intensitat).
+	Rebre i visualitzar dades en temps real (velocitat, distància, intensitat).
 
 
-	*Guardar els resultats de cada sessió al servidor.
+	Guardar els resultats de cada sessió al servidor.
 
 
 4. Servidor i base de dades: emmagatzema tota la informació d’entrenaments, jugadors i rendiment per poder fer comparatives al llarg del temps.
