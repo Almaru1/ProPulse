@@ -6,7 +6,7 @@ El nostre projecte proposa un sistema intel·ligent format per unes bambes i un 
 
 Aquestes dades es connecten via Wi-Fi a una app mòbil i una plataforma web que permet a l’entrenador fer un seguiment complet dels jugadors i comparar-ne el progrés al llarg de la temporada.
 
-A més, s’inclou un espai per a ojeadors, que poden consultar estadístiques reals per detectar talent.
+A més, s’inclou un espai per a observadors, que poden consultar estadístiques reals per detectar talent.
 
 El projecte combina hardware, xarxes, seguretat, servidors i aplicacions web, integrant tots els mòduls de SMX en una solució tecnològica moderna i escalable.
 
