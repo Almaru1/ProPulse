@@ -1,6 +1,6 @@
 # ProPulse
 
-Context del projecte ProPulse:
+🎯 Context del projecte ProPulse:
 
 ProPulse és un sistema IoT orientat a la monitorització esportiva en temps real. Integra sensors fisiològics i de moviment amb un microcontrolador (ESP32/Arduino) que transmet les dades via WiFi a un servidor web, on són emmagatzemades, processades i visualitzades en forma de gràfiques i estadístiques.
 
@@ -18,7 +18,7 @@ Anàlisi de dades (valors reals i històrics, alertes)
 
 L’objectiu final és crear un prototip funcional complet que mostri tot el flux: captura → transmissió → emmagatzematge → visualització.
 
-Abast del projecte
+🎯 Abast del projecte
 Inclou
 
 Desenvolupament del dispositiu IoT amb ESP32/Arduino.
