@@ -2,50 +2,41 @@
 
 🧩 Context del projecte
 
-ProPulse és un sistema IoT de monitorització esportiva en temps real. El projecte integra sensors fisiològics i de moviment connectats a un microcontrolador (ESP32/Arduino), que transmet les dades via WiFi a un servidor web. Aquest servidor emmagatzema, analitza i mostra la informació en gràfics i estadístiques a través d’un dashboard responsive.
+ProPulse és un sistema IoT de monitorització esportiva orientat a captar dades fisiològiques i de moviment en temps real.
+El dispositiu (ESP32 + sensors) envia informació mitjançant WiFi cap a un servidor web, on les dades són emmagatzemades i visualitzades en un dashboard.
 
-El sistema cobreix tot el flux complet:
+Flux general del sistema:
 
-Sensors → Microcontrolador → Xarxa WiFi → API/Servidor → Base de dades → Dashboard web
+Sensors → ESP32 → WiFi → API/Servidor → Base de dades → Dashboard web
 
-L’objectiu principal és crear un prototip funcional, modular i ampliable, apte per a demostracions i validació tècnica.
+El projecte busca desenvolupar un prototip funcional, modular i escalable.
 
 🎯 Abast del projecte
-✔️ Inclou
+· Inclou
 
-Desenvolupament del dispositiu IoT amb ESP32 o Arduino.
+Integració de sensors (pulsacions, acceleració, temperatura, velocitat).
 
-Integració de sensors:
+Microcontrolador ESP32 per lectura i transmissió de dades.
 
-ritme cardíac (MAX30102),
+Comunicació via WiFi amb protocols HTTP/REST o MQTT.
 
-acceleració/IMU (MPU6050),
-
-temperatura (DS18B20/DHT22),
-
-velocitat (calculada o sensor opcional).
-
-Comunicació sense fils a través de WiFi.
-
-Enviament de dades via MQTT o REST API.
-
-Backend amb Flask (Python) o PHP.
+Backend amb Flask o PHP.
 
 Base de dades MySQL.
 
-Dashboard web amb HTML5 + CSS3 + JavaScript + gràfics.
+Dashboard web en HTML5/CSS3/JS.
 
-Sistema d’autenticació bàsic.
+Autenticació bàsica d’usuaris.
 
-Documentació tècnica i arquitectura del sistema.
+Documentació tècnica i diagrames del sistema.
 
-❌ No inclou
+· No inclou
 
 Aplicacions mòbils natives.
 
 Intel·ligència artificial avançada.
 
-Hardware certificat professional.
+Hardware certificat per ús mèdic.
 
 Comunicacions mòbils (4G/5G).
 
