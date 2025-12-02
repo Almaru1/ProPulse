@@ -24,7 +24,7 @@ Backend amb Flask o PHP.
 
 Base de dades MySQL.
 
-Dashboard web en HTML5/CSS3/JS.
+Dashboard web en HTML5/CSS/BOOTSTRAP
 
 Autenticació bàsica d’usuaris.
 
