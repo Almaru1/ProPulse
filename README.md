@@ -1,160 +1,189 @@
 # ProPulse
 
-🎯 Context del projecte ProPulse:
+🧩 Context del projecte
 
-ProPulse és un sistema IoT orientat a la monitorització esportiva en temps real. Integra sensors fisiològics i de moviment amb un microcontrolador (ESP32/Arduino) que transmet les dades via WiFi a un servidor web, on són emmagatzemades, processades i visualitzades en forma de gràfiques i estadístiques.
+ProPulse és un sistema IoT de monitorització esportiva en temps real. El projecte integra sensors fisiològics i de moviment connectats a un microcontrolador (ESP32/Arduino), que transmet les dades via WiFi a un servidor web. Aquest servidor emmagatzema, analitza i mostra la informació en gràfics i estadístiques a través d’un dashboard responsive.
 
-El projecte combina:
+El sistema cobreix tot el flux complet:
 
-Hardware (sensors + ESP32)
+Sensors → Microcontrolador → Xarxa WiFi → API/Servidor → Base de dades → Dashboard web
 
-Xarxes i protocols (WiFi, MQTT o HTTP)
-
-Backend (API REST amb Flask o PHP, BD MySQL)
-
-Frontend (HTML5, CSS3, JS i gràfics)
-
-Anàlisi de dades (valors reals i històrics, alertes)
-
-L’objectiu final és crear un prototip funcional complet que mostri tot el flux: captura → transmissió → emmagatzematge → visualització.
+L’objectiu principal és crear un prototip funcional, modular i ampliable, apte per a demostracions i validació tècnica.
 
 🎯 Abast del projecte
-Inclou
+✔️ Inclou
 
-Desenvolupament del dispositiu IoT amb ESP32/Arduino.
+Desenvolupament del dispositiu IoT amb ESP32 o Arduino.
 
-Integració de sensors: pulsòmetre, acceleròmetre/IMU, temperatura, velocitat.
+Integració de sensors:
 
-Comunicació sense fils mitjançant WiFi.
+ritme cardíac (MAX30102),
+
+acceleració/IMU (MPU6050),
+
+temperatura (DS18B20/DHT22),
+
+velocitat (calculada o sensor opcional).
+
+Comunicació sense fils a través de WiFi.
 
 Enviament de dades via MQTT o REST API.
 
-Creació d’una base de dades MySQL.
+Backend amb Flask (Python) o PHP.
 
-Backend per rebre, validar i guardar dades.
+Base de dades MySQL.
 
-Interfície web responsive amb gràfics.
+Dashboard web amb HTML5 + CSS3 + JavaScript + gràfics.
 
-Sistema bàsic d’autenticació d’usuaris.
+Sistema d’autenticació bàsic.
 
-Documentació tècnica, diagrames i proves.
+Documentació tècnica i arquitectura del sistema.
 
-No inclou
+❌ No inclou
 
 Aplicacions mòbils natives.
 
-Processament avançat d’IA o machine learning.
+Intel·ligència artificial avançada.
 
-Maquinari certificat professional.
+Hardware certificat professional.
 
-Comunicacions 4G/5G o Bluetooth avançat.
+Comunicacions mòbils (4G/5G).
 
 🟩 Fase 1 — Definició i anàlisi
 🎯 Objectiu
 
-Establir la base conceptual del projecte i determinar tots els requisits necessaris.
+Establir la base conceptual, establir el problema i determinar els requisits tècnics del sistema.
 
 1. Definició del problema
 
-Els sistemes de monitorització esportiva són sovint costosos o limitats. ProPulse pretén crear un sistema modular, assequible i ampliable que permeti controlar valors esportius en temps real.
+Els sistemes comercials de monitorització esportiva són sovint costosos o massa tancats. ProPulse busca crear una alternativa portable, assequible i modulable, que permeti obtenir dades reals d’un esportista en temps real.
 
 2. Objectius funcionals
 
 Captar dades fisiològiques i de moviment.
 
-Transmetre dades en temps real a un servidor.
+Transmetre dades al servidor en temps real.
 
-Emmagatzemar l’històric d’entrenaments.
+Emmagatzemar els entrenaments.
 
-Visualitzar gràfics i estadístiques a la web.
+Mostrar les dades en gràfics i estadístiques.
 
-Detectar valors fora de rang (alertes).
+Generar alertes per valors anòmals.
 
-Permetre accés autenticat d’usuaris.
+Permetre login i gestió d’usuaris.
 
 3. Requisits tècnics
-• Maquinari
+🔧 Maquinari
 
-ESP32 amb WiFi integrat.
+ESP32 amb WiFi.
 
-Sensors: MAX30102 (pulsacions), MPU6050 (acceleració), DHT22/DS18B20 (temperatura).
+Sensors:
 
-Bateria o font d’alimentació portàtil.
+MAX30102 (pulsacions),
 
-• Programari
+MPU6050 (acceleració/IMU),
 
-Backend: Flask o PHP.
+DS18B20 o DHT22 (temperatura).
 
-Base de dades: MySQL.
+Bateria recarregable / powerbank.
 
-Frontend: HTML5, CSS3, JavaScript (referències tècniques com HTML5 i CSS3 procedents del manual HTML5 ).
+🖥️ Programari
 
-Control de versions amb Git i GitHub.
+Backend:
 
-• Xarxa i protocols
+Flask (Python) o PHP
 
-WiFi 2.4GHz.
+Base de dades:
 
-Protocols candidats:
+MySQL
 
-HTTP/REST per simplicitat,
+Frontend:
 
-MQTT per comunicació contínua i lleugera.
+HTML5, CSS3, JavaScript
+
+Gràfics amb Chart.js o Recharts
+
+Control de versions:
+
+Git + GitHub
+
+🌐 Xarxa i protocols
+
+Connexió via WiFi 2.4GHz
+
+Protocols disponibles:
+
+HTTP/REST (simple)
+
+MQTT (lleuger i en temps real)
+
+Format de dades:
+
+{
+  "ritme_cardiac": 120,
+  "temperatura": 36.7,
+  "ax": 0.12,
+  "ay": -0.03,
+  "az": 9.75
+}
 
 4. Diagrama de blocs (descripció)
-[Sensors] → [ESP32] → (WiFi) → [Servidor/API] → [Base de dades MySQL] → [Web Dashboard]
+[Sensors] → [ESP32] → (WiFi) → [Servidor/API] → [BD MySQL] → [Dashboard Web]
 
 5. Lliurables
 
-Document de requisits funcionals i tècnics.
+Document de requisits
 
-Diagrama del sistema.
+Diagrama d’arquitectura
 
-Esborrany de la memòria tècnica inicial.
+Esborrany de la memòria inicial
 
-Repositori GitHub estructurat.
+Repositori GitHub inicial
 
 🟨 Fase 2 — Disseny del sistema
 🎯 Objectiu
 
-Definir l’arquitectura completa del sistema i establir l’estructura tècnica que es desenvoluparà posteriorment.
+Definir l’arquitectura tècnica del sistema i establir l’estructura de dades, protocols i interfícies.
 
-1. Arquitectura del sistema
-• Hardware
+1. Arquitectura general
+🔧 Hardware
 
-Connexió dels sensors a l’ESP32 (I2C, 1-Wire, GPIO).
+Connexions I2C, 1-Wire i GPIO entre sensors i ESP32.
 
-Esquema elèctric preliminar.
+Esquema elèctric del prototip.
 
-• Xarxa
+🌐 Xarxa
 
-Selecció definitiva del protocol (MQTT/HTTP).
+Selecció final de protocol: MQTT o REST.
 
-Definició del format de les trames JSON.
+Definició de rutes i payloads JSON.
 
-• Backend
+Estratègies de seguretat bàsica (tokens simples, API key).
 
-Arquitectura de l’API REST.
+🗄️ Backend
 
-Rutes principals (exemple: /api/sensor, /api/login).
+Estructura de rutes:
 
-Validació de dades.
+/api/login
 
-Gestió d’usuaris i sessions.
+/api/sensor
 
-• Frontend
+/api/dades/{usuari}
 
-Estructura HTML5 semàntica (segons bones pràctiques del manual HTML5 ).
+Validació i sanitització de dades.
 
-Disseny responsive amb CSS3.
+Control d’autenticació.
 
-Dashboard interactiu amb JavaScript.
+🎨 Frontend
 
-2. Disseny de la base de dades (ER)
+Pàgines HTML5 semàntiques.
 
-Basada en coneixements de MySQL i gestionada segons les bones pràctiques dels documents Bases de Dades i Guia MySQL II .
+CSS3 responsive (media queries, flexbox).
 
-Taules proposades:
+Dashboard JS amb gràfics i taules.
+
+2. Model de dades — Esquema ER
+Taules principals:
 
 usuaris
 
@@ -164,40 +193,40 @@ dades_sensors
 
 alertes (opcional)
 
-Relacions 1:N entre sessions i dades, i entre usuaris i sessions.
+Relacions:
+
+usuari 1:N sessions
+
+sessions 1:N dades_sensors
 
 3. UX/UI
 
-Wireframes de les vistes principals.
+Wireframes del dashboard.
 
-Prototips en baixa fidelitat del dashboard i gestió d’usuaris.
+Interfície per:
 
-Definició de paleta de colors i components.
+inici de sessió,
 
-4. Protocols
-Exemple de payload JSON:
-{
-  "ritme_cardiac": 120,
-  "temperatura": 36.7,
-  "ax": 0.12,
-  "ay": -0.03,
-  "az": 9.75
-}
+vista general d’entrenaments,
 
-5. Proves inicials
+gràfics en temps real,
 
-Connexió d’un sensor a l’ESP32.
+historial d’usuari.
 
-Enviament d’una lectura de prova al backend.
+4. Proves preliminars
 
-Comprovació d’inserció a la base de dades.
+Connexió d’un sensor real a l’ESP32.
 
-6. Lliurables
+Enviament de dades de prova.
 
-Dossier d’arquitectura tècnica complet.
+Validació d’insercions a MySQL.
 
-Esquema ER + script SQL inicial.
+5. Lliurables
 
-Prototip UX/UI.
+Arquitectura tècnica documentada
 
-Informe de decisions i proves preliminars.
+Esquema ER + script SQL inicial
+
+Prototip UX/UI
+
+Informe de disseny i decisions
