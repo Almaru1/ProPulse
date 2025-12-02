@@ -16,7 +16,10 @@ El projecte busca desenvolupar un prototip funcional, modular i escalable.
 
 ### Inclou
 
-* Integració de sensors (pulsacions, acceleració, temperatura, velocitat)
+* Integració de sensors:
+  * MAX30102 (pulsacions i SpO2)
+  * MLX90614 o MAX30205 (temperatura corporal)
+  * MPU6050 (acceleració i moviment)
 * Microcontrolador ESP32 per lectura i transmissió de dades
 * Comunicació via WiFi amb protocols HTTP/REST o MQTT
 * Backend amb Flask (Python) o PHP
@@ -60,9 +63,9 @@ ProPulse busca crear una alternativa portable, assequible i modulable, que perme
 
 * ESP32 amb WiFi
 * Sensors:
-  * MAX30102 (pulsacions)
-  * MPU6050 (acceleració / IMU)
-  * DS18B20 o DHT22 (temperatura)
+  * MAX30102 (pulsacions i oxigen en sang)
+  * MLX90614 o MAX30205 (temperatura corporal)
+  * MPU6050 (acceleració i moviment)
 * Bateria recarregable o powerbank
 
 ### Programari
@@ -91,5 +94,3 @@ Format de dades (exemple):
 
 ```json
 { "ritme_cardiac": 120, "temperatura": 36.7, "ax": 0.12, "ay": -0.03, "az": 9.75 }
-
-
