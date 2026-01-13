@@ -16,7 +16,7 @@ El projecte busca desenvolupar un prototip funcional, modular i escalable.
 
 ### Inclou
 
-* Integració de sensors:
+* Integració de sensors::
   * MAX30102 (pulsacions i SpO2)
   * MLX90614 o MAX30205 (temperatura corporal)
   * MPU6050 (acceleració i moviment)
