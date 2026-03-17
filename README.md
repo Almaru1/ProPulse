@@ -2,16 +2,13 @@
 
 ## Context del projecte
 
-Propulse es un sistema que medeix dades fisologiques en un entrenament 
+Propulse es un sistema que recull dades fisologiques en un entrenament 
 
 ## Abast del projecte
 
 ### Inclou
 
 * Integració de sensors::
-  * MAX30102 (pulsacions i SpO2)
-  * MLX90614 o MAX30205 (temperatura corporal)
-  * MPU6050 (acceleració i moviment)
 * Microcontrolador ESP32 per lectura i transmissió de dades
 * Comunicació via WiFi amb protocols HTTP/REST o MQTT
 * Backend amb Flask (Python) o PHP
