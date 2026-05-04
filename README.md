@@ -46,9 +46,9 @@ entrenaments i permeti reduir el nombre de lesions en els entrenaments.
 * Integracions amb sistemes externs  
 * Análisis mèdic profesional 
 
-### Components del sistema 
+## Components del sistema 
 
-## El sistema es compon d’aquests elements principals:
+### El sistema es compon d’aquests elements principals:
 
 * Dispositiu wearable (polsera ProPulse) encarregat de recollir dades biomètriques 
 * Plataforma web per la gestió i visualització de la informació recollida
@@ -56,15 +56,15 @@ entrenaments i permeti reduir el nombre de lesions en els entrenaments.
 * Interfície d’usuaris i assignació de rols 
 
 
-### Actors del sistema 
+## Actors del sistema 
 
-## Els actors principals són aquests: 
+### Els actors principals són aquests: 
 
 * Polsera ProPulse 
 * Jugadors 
 * Entrenadors 
 * Director tecnic 
 
-### Diagrama De Tecnic de ProPulse 
+## Diagrama Tecnic de ProPulse 
 
 <img width="734" height="455" alt="Captura de pantalla 2026-05-01 a las 18 13 43" src="https://github.com/user-attachments/assets/45f96284-26a3-4ff9-9e19-2225155a719a" />
