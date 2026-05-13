@@ -26,35 +26,19 @@ entrenaments i permeti reduir el nombre de lesions en els entrenaments.
 
 ## Abast del projecte
 
-### Inclou
+El nostre projecte inclou el cloud AWS la integració d’un dispositiu wearable, creació de perfils d’usuaris i assignacions de rols visualitzar dades esportives, iniciar i gravar un entrenament, recopilar dades biomètriques i crear gràfiques amb les dades recollides. 
 
-* Cloud AWS 
-* Gràfics amb CHART.JS 
-* Dashboard web en HTML5, CSS
-* Integració d'un dispositiu wearable 
-* Recopilar dades biométricas 
-* Creació de perfils d’usuaris i assignacions de rols 
-* Visualitzar dades de rendiment esportiu 
+No inclou la intel·ligència artificial desenvolupament de maquinari propi, integracions amb sistemes externs, la xarxa wifi del club, anàlisi mèdics professionals, no crearem la infraestructura.  
 
-
-
-### No inclou
-
-* Aplicacions mòbils 
-* Intel·ligència artificial 
-* Desenvolupament de hardware propi 
-* Integracions amb sistemes externs  
-* Análisis mèdic profesional 
 
 ## Components del sistema 
 
 ### El sistema es compon d’aquests elements principals:
 
-* Dispositiu wearable (polsera ProPulse) encarregat de recollir dades biomètriques 
-* Plataforma web per la gestió i visualització de la informació recollida
-* Cloud AWS a on està la base de dades i la plataforma web
-* Interfície d’usuaris i assignació de rols 
-
+* Sistema de recollida de dades
+* Plataforma de gestió
+* Sistema de processament de dades
+* Sistema de visualització de dades
 
 ## Actors del sistema 
 
@@ -63,7 +47,8 @@ entrenaments i permeti reduir el nombre de lesions en els entrenaments.
 * Polsera ProPulse 
 * Jugadors 
 * Entrenadors 
-* Director tecnic 
+* Director tècnic 
+
 
 ## Diagrama Tecnic de ProPulse 
 
